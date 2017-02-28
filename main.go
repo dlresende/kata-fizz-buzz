@@ -1,5 +1,11 @@
 package fizzbuzz
 
+import "strconv"
+
 func FizzBuzz(last int) string {
-	return "not implemented"
+	result := ""
+	for number := 1; number <= last; number++ {
+		result += strconv.Itoa(number) + "\n"
+	}
+	return result
 }
