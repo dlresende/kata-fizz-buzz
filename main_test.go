@@ -11,7 +11,7 @@ func TestThatGivenANumberNItShouldPrintNumbersFrom1ToN(t *testing.T) {
 
 func TestThatGivenANumberDivisibleBy3ItShouldPrintFizz(t *testing.T) {
 	actual := FizzBuzz(3)
-	expected := "1\n2\nFizz"
+	expected := "1\n2\nFizz\n"
 
 	assertEquals(actual, expected, t)
 }
