@@ -7,6 +7,6 @@ func TestThatGivenANumberNItShouldPrintNumbersFrom1ToN(t *testing.T) {
 	expected := "1\n2\n"
 
 	if actual != expected {
-		t.Errorf("Expecting " + expected + ", but got " + actual)
+		t.Errorf("\nExpecting\n" + expected + "\nbut got\n" + actual)
 	}
 }
