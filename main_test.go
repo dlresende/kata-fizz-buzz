@@ -16,6 +16,13 @@ func TestThatGivenANumberDivisibleBy3ItShouldPrintFizz(t *testing.T) {
 	assertEquals(actual, expected, t)
 }
 
+func TestThatGivenANumberDivisibleBy5ItShouldPrintBuzz(t *testing.T) {
+	actual := FizzBuzz(5)
+	expected := "1\n2\nFizz\n4\nBuzz\n"
+
+	assertEquals(actual, expected, t)
+}
+
 func assertEquals(actual string, expected string, t *testing.T) {
 	if actual != expected {
 		t.Errorf("\nExpecting\n" + expected + "\nbut got\n" + actual)
