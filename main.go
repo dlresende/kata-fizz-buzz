@@ -3,9 +3,15 @@ package fizzbuzz
 import "strconv"
 
 func FizzBuzz(last int) string {
-	result := ""
+	var result string
+	result = ""
 	for number := 1; number <= last; number++ {
-		result += strconv.Itoa(number) + "\n"
+		if number%3 == 0 {
+			result += "Fizz"
+		} else {
+			result += strconv.Itoa(number)
+		}
+		result += "\n"
 	}
 	return result
 }
