@@ -10,7 +10,7 @@ func FizzBuzz(last int) string {
 		} else if isDivisibleBy(number, 3) {
 			result += "Fizz"
 		} else {
-			result += strconv.Itoa(number)
+			result += toString(number)
 		}
 		result += "\n"
 	}
@@ -19,4 +19,8 @@ func FizzBuzz(last int) string {
 
 func isDivisibleBy(dividend int, divisor int) bool {
 	return dividend%divisor == 0
+}
+
+func toString(number int) string {
+	return strconv.Itoa(number)
 }
