@@ -3,8 +3,7 @@ package fizzbuzz
 import "strconv"
 
 func FizzBuzz(last int) string {
-	var result string
-	result = ""
+	result := ""
 	for number := 1; number <= last; number++ {
 		if number%5 == 0 {
 			result += "Buzz"
