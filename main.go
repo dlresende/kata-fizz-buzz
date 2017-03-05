@@ -1,6 +1,16 @@
-package fizzbuzz
+package main
 
-import "strconv"
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
+
+func main() {
+	lastNumber, _ := toInt(os.Args[1])
+	output := FizzBuzz(lastNumber)
+	fmt.Print(output)
+}
 
 func FizzBuzz(last int) string {
 	result := ""
@@ -23,4 +33,8 @@ func isDivisibleBy(dividend int, divisor int) bool {
 
 func toString(number int) string {
 	return strconv.Itoa(number)
+}
+
+func toInt(numberAsString string) (int, error) {
+	return strconv.Atoi(numberAsString)
 }
