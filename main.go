@@ -21,13 +21,19 @@ func IterateUntil(lastNumber int) string {
 }
 
 func Replace(number int) string {
+	if isDivisibleBy(number, 3*5) {
+		return "FizzBuzz"
+	}
+
 	if isDivisibleBy(number, 5) {
 		return "Buzz"
-	} else if isDivisibleBy(number, 3) {
-		return "Fizz"
-	} else {
-		return toString(number)
 	}
+
+	if isDivisibleBy(number, 3) {
+		return "Fizz"
+	}
+
+	return toString(number)
 }
 
 func isDivisibleBy(dividend int, divisor int) bool {
