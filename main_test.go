@@ -2,25 +2,28 @@ package main
 
 import "testing"
 
+func TestThatGivenANumberItShouldPrintTheNumber(t *testing.T) {
+	assertEquals(Replace(1), "1", t)
+	assertEquals(Replace(2), "2", t)
+}
+
 func TestThatGivenANumberNItShouldPrintNumbersFrom1ToN(t *testing.T) {
-	actual := FizzBuzz(2)
-	expected := "1\n2\n"
+	actual := IterateUntil(5)
+	expected := "1\n2\nFizz\n4\nBuzz\n"
 
 	assertEquals(actual, expected, t)
 }
 
 func TestThatGivenANumberDivisibleBy3ItShouldPrintFizz(t *testing.T) {
-	actual := FizzBuzz(3)
-	expected := "1\n2\nFizz\n"
+	actual := Replace(3)
 
-	assertEquals(actual, expected, t)
+	assertEquals(actual, "Fizz", t)
 }
 
 func TestThatGivenANumberDivisibleBy5ItShouldPrintBuzz(t *testing.T) {
-	actual := FizzBuzz(5)
-	expected := "1\n2\nFizz\n4\nBuzz\n"
+	actual := Replace(5)
 
-	assertEquals(actual, expected, t)
+	assertEquals(actual, "Buzz", t)
 }
 
 func assertEquals(actual string, expected string, t *testing.T) {
