@@ -4,7 +4,7 @@ Build a program that takes a number N as input and for each number from 1 to N:
 
 - If the number is divisible by 3, should print "Fizz";
 - If the number is divisible by 5, should print "Buzz";
-- If the number is divisible by both 3 and 5, should print "Fizz Buzz";
+- If the number is divisible by both 3 and 5, should print "FizzBuzz";
 - Otherwise, should print the number.
 
 Example:
