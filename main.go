@@ -7,6 +7,11 @@ import (
 )
 
 func main() {
+	if len(os.Args) != 2 {
+		fmt.Print("Wrong number of arguments.\nUsage: kata-fizz-buzz <number>")
+		os.Exit(1)
+	}
+
 	lastNumber, _ := toInt(os.Args[1])
 	output := IterateUntil(lastNumber)
 	fmt.Print(output)
