@@ -26,3 +26,14 @@ Fizz
 14
 FizzBuzz
 ```
+
+## Solution in Go
+### Requirements
+- [Go](https://golang.org/)
+
+### Test & Run
+```
+go test
+go run main.go 15
+```
+
