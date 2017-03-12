@@ -12,20 +12,20 @@ func main() {
 		os.Exit(1)
 	}
 
-	lastNumber, _ := toInt(os.Args[1])
-	output := IterateUntil(lastNumber)
+	number, _ := toNumber(os.Args[1])
+	output := CountTo(number)
 	fmt.Print(output)
 }
 
-func IterateUntil(lastNumber int) string {
+func CountTo(lastNumber int) string {
 	output := ""
 	for number := 1; number <= lastNumber; number++ {
-		output += Replace(number) + "\n"
+		output += Guess(number) + "\n"
 	}
 	return output
 }
 
-func Replace(number int) string {
+func Guess(number int) string {
 	if isDivisibleBy(number, 3*5) {
 		return "FizzBuzz"
 	}
@@ -49,6 +49,6 @@ func toString(number int) string {
 	return strconv.Itoa(number)
 }
 
-func toInt(numberAsString string) (int, error) {
+func toNumber(numberAsString string) (int, error) {
 	return strconv.Atoi(numberAsString)
 }
