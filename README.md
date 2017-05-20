@@ -37,3 +37,8 @@ go test
 go run main.go 15
 ```
 
+### Code coverage
+```
+go test -coverprofile=coverage.out
+go tool cover -html=coverage.out
+```
