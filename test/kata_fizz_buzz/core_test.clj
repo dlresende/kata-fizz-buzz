@@ -15,6 +15,6 @@
   (testing "should print FizzBuzz when a number is divisible by 3 and 5"
     (is (= (guess 15) "FizzBuzz"))))
 
-(deftest main-test
+(deftest fizz-buzz-test
   (testing "should play fizz-buzz until 5"
     (is (= (fizz-buzz 5) '("1", "2", "Fizz", "4", "Buzz")))))
