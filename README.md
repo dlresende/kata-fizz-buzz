@@ -26,3 +26,21 @@ Fizz
 14
 FizzBuzz
 ```
+
+## Dependencies
+- [Leiningen](https://leiningen.org/)
+
+## Test
+```bash
+$ lein test
+```
+
+# Code Coverage
+```bash
+$ lein cloverage
+```
+
+# Run
+```bash
+$ lein run 15
+```
