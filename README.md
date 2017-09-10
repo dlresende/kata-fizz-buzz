@@ -35,12 +35,12 @@ FizzBuzz
 $ lein test
 ```
 
-# Code Coverage
+## Code Coverage
 ```bash
 $ lein cloverage
 ```
 
-# Run
+## Run
 ```bash
 $ lein run 15
 ```
